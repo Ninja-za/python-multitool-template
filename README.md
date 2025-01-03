@@ -1,6 +1,7 @@
--Add your own commands
+-Feel free to add your own commands on the empty slots. Or delete the ones on the template.
 
--feel free to add your own banner
+-Feel free to add your own banner, this is the website i use:
+https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20
 
 - it should look like this when finished:
 
