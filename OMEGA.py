@@ -26,10 +26,10 @@ while True:
     print("")
     print("   ╔════════════════════════════╗   ╔════════════════════════════╗   ╔════════════════════════════╗ ")
     print("   ║                            ║   ║                            ║   ║                            ║ ")
-    print("   ║  ╚═══[1] ip lookup         ║   ║  ╚═══[5]                   ║   ║  ╚═══[9]                   ║ ")
-    print("   ║  ╚═══[2] webhook sender    ║   ║  ╚═══[6]                   ║   ║  ╚═══[10]                  ║ ")
-    print("   ║  ╚═══[3] show HWID         ║   ║  ╚═══[7]                   ║   ║  ╚═══[11]                  ║ ")
-    print("   ║  ╚═══[4] webbhook spammer  ║   ║  ╚═══[8]                   ║   ║  ╚═══[12]                  ║ ")
+    print("   ║  ╚═══[1] ip lookup         ║   ║  ╚═══[5] ???               ║   ║  ╚═══[9]   ???             ║ ")
+    print("   ║  ╚═══[2] webhook sender    ║   ║  ╚═══[6] ???               ║   ║  ╚═══[10]  ???             ║ ")     #feel free to add your ownn tools
+    print("   ║  ╚═══[3] show HWID         ║   ║  ╚═══[7] ???               ║   ║  ╚═══[11]  ???             ║ ")
+    print("   ║  ╚═══[4] ???               ║   ║  ╚═══[8] ???               ║   ║  ╚═══[12]  ???             ║ ")
     print("   ║                            ║   ║                            ║   ║                            ║ ")
     print("   ╚════════════════════════════╝   ╚════════════════════════════╝   ╚════════════════════════════╝ ")
     print("") 
@@ -98,33 +98,7 @@ while True:
 
 
     if x == "4":
-          os.system("cls")
-    print("WEBHOOK SPAMMER\n")
-    webhook = input("Webhook URL: ")
-    text = input("Enter text to spam: ")
-    name = input("Webhook Name: ")
-
-    # Payload for sending message
-    payload = {
-        "content": text,
-        "username": name
-    }
-
-    loop = "Y"  # Initialize the loop variable
     
-    while loop == "Y":
-        try:
-            response = requests.post(webhook, json=payload)
-            
-            if response.status_code == 204:
-                print("Message sent successfully.")
-            else:
-                print(f"Failed to send message. Status code: {response.status_code}")
-        except Exception as e:
-            print(f"Error sending webhook: {e}")
-
-        # Asking the user if they want to continue
-        loop = input("Do you want to continue spamming? (Y/N): ").capitalize()
          
 
 
